@@ -18,6 +18,25 @@
                 <p class="app-subtitle">Get real-time weather updates for any city</p>
             </div>
         </header>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Search Section -->
+            <section class="search-section">
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        class="search-input" 
+                        placeholder="Enter city name..." 
+                        autocomplete="off"
+                    >
+                    <button id="search-btn" class="search-btn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                <div id="error-message" class="error-message"></div>
+            </section>
+
     </div>
     <script src="weather.js"></script>
 </body>
