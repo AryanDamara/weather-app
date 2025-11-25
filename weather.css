@@ -374,3 +374,117 @@ body {
     opacity: 0.9;
     margin-top: 30px;
 }
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        padding: 30px 15px 20px;
+    }
+
+    .app-title {
+        font-size: 2rem;
+    }
+
+    .app-title i {
+        font-size: 2rem;
+    }
+
+    .app-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    .weather-section {
+        padding: 25px;
+    }
+
+    .weather-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .city-name {
+        font-size: 1.8rem;
+    }
+
+    .temperature {
+        font-size: 3rem;
+    }
+
+    .weather-icon-large img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .weather-details {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .detail-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .placeholder i {
+        font-size: 3rem;
+    }
+
+    .placeholder h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-title {
+        font-size: 1.5rem;
+    }
+
+    .app-title i {
+        font-size: 1.5rem;
+    }
+
+    .city-name {
+        font-size: 1.5rem;
+    }
+
+    .temperature {
+        font-size: 2.5rem;
+    }
+
+    .weather-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-input {
+        padding: 12px 15px;
+    }
+
+    .search-btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===========================
+   UTILITY CLASSES
+   =========================== */
+
+.show {
+    display: block !important;
+}
