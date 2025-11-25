@@ -30,3 +30,49 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
+
+/* ===========================
+   CONTAINER & LAYOUT
+   =========================== */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+
+.header {
+    text-align: center;
+    color: white;
+    padding: 40px 20px 30px;
+    margin-bottom: 30px;
+}
+
+.app-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.app-title i {
+    font-size: 3rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.app-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    font-weight: 300;
+}
