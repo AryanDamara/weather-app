@@ -36,6 +36,44 @@
                 </div>
                 <div id="error-message" class="error-message"></div>
             </section>
+            <!-- Weather Display Section -->
+            <section class="weather-section">
+                <!-- Current Weather -->
+                <div id="current-weather" class="current-weather hidden">
+                    <div class="weather-header">
+                        <div class="city-info">
+                            <h2 id="city-name" class="city-name">City Name</h2>
+                            <p id="current-date" class="current-date">Loading...</p>
+                        </div>
+                        <div class="weather-icon-large">
+                            <img id="weather-icon" src="" alt="Weather icon" class="icon">
+                        </div>
+                    </div>
+
+                    <div class="weather-main">
+                        <div class="temperature-container">
+                            <span id="temperature" class="temperature">0</span>
+                            <span class="degree">°C</span>
+                        </div>
+                        <p id="weather-description" class="weather-description">Clear Sky</p>
+                    </div>
+
+                    <div class="weather-details">
+                        <div class="detail-card">
+                            <i class="fas fa-droplet"></i>
+                            <div class="detail-info">
+                                <p class="detail-label">Humidity</p>
+                                <p id="humidity" class="detail-value">0%</p>
+                            </div>
+                        </div>
+
+                        <div class="detail-card">
+                            <i class="fas fa-wind"></i>
+                            <div class="detail-info">
+                                <p class="detail-label">Wind Speed</p>
+                                <p id="wind-speed" class="detail-value">0 m/s</p>
+                            </div>
+                        </div>
 
     </div>
     <script src="weather.js"></script>
