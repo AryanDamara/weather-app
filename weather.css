@@ -277,3 +277,87 @@ body {
     height: 120px;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
+
+/* Weather Main */
+
+.weather-main {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.temperature-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+
+.temperature {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.degree {
+    font-size: 2rem;
+    color: var(--text-light);
+    margin-top: 10px;
+}
+
+.weather-description {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+/* Weather Details */
+
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.detail-card {
+    background: linear-gradient(135deg, #f3f4f6 0%, #f9fafb 100%);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, var(--background-color) 0%, #f3f4f6 100%);
+}
+
+.detail-card i {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    min-width: 40px;
+    text-align: center;
+}
+
+.detail-info {
+    flex: 1;
+}
+
+.detail-label {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.detail-value {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin: 0;
+}
