@@ -6,7 +6,7 @@
 // CONFIGURATION
 // ===========================
 
-const API_KEY = "aaa754c90b0e36da5c8b699906caaa4f"; // Get from https://openweathermap.org/api
+const API_KEY = "REPLACE_WITH_YOUR_API_KEY"; // Get from https://openweathermap.org/api
 const GEOCODE_API = "https://api.openweathermap.org/geo/1.0/direct";
 const WEATHER_API = "https://api.openweathermap.org/data/2.5/weather";
 
