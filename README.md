@@ -1,82 +1,27 @@
-Weather Forecast App
-A modern, responsive weather application built with HTML, CSS, and JavaScript. It allows users to search for any city and view current weather conditions using live data from the OpenWeatherMap API.
+# Dynamic Weather App
 
-Features
-- Search weather by city name.
-- Real-time current weather data.
-- Temperature in Celsius.
-- Weather condition description and icon.
-- Details: humidity, wind speed, pressure, visibility, feels like, cloudiness.
-- Dynamic background based on weather conditions.
-- Responsive design for desktop, tablet, and mobile.
-- Error handling for invalid city names and missing API key.
+A beautiful, fully-responsive weather application that gives you real-time weather updates, dynamic gradients based on weather conditions, and precise metrics like temperature, wind speed, humidity, and more. 
 
-Tech Stack
-- HTML5 – Structure and layout.
-- CSS3 – Styling, animations, and responsive design.
-- JavaScript (ES6+) – Logic, API calls, and DOM manipulation.
-- OpenWeatherMap API – Weather and geocoding data.
-- Font Awesome – Icons.
+Built using HTML, CSS, and Vanilla JavaScript, with no external libraries required.
 
-Getting Started
-1. Clone or download this repository:
-   - Place the files in a folder (for example, weather-app).
+## Features
+- **No API Key Required**: Retrieves data using the free [Open-Meteo API](https://open-meteo.com/).
+- **Dynamic Backgrounds**: The app's background gradient completely changes to match the current weather conditions (e.g. Clear, Snow, Thunderstorm, Rain).
+- **Responsive Design**: Designed to look clean and legible on phones, tablets, and desktops.
+- **Accurate Real-Time Data**: Provides current temperature, feels-like temperature, humidity percentage, wind speed, pressure, and cloudiness.
 
-2. File structure:
-   - index.html
-   - styles.css
-   - script.js
-   - README.md
+## How to Run
 
-3. Get an OpenWeatherMap API key:
-   - Go to: https://openweathermap.org/api
-   - Create a free account and verify your email.
-   - Navigate to “My API keys” and copy your key.
+Because this app utilizes standard Web APIs and requires no build step, getting started is extremely easy.
 
-4. Configure your API key:
-   - Open script.js.
-   - Find this line:
-     const API_KEY = "REPLACE_WITH_YOUR_API_KEY";
-   - Replace REPLACE_WITH_YOUR_API_KEY with your actual key (keep it inside quotes).
+1. Clone or download this repository.
+2. Open the `index.html` file in your preferred web browser.
+3. Type a city name into the search bar and see the real-time weather!
 
-5. Run the app:
-   - Open index.html in your browser (double-click or use a local server).
-   - Type a city name in the search box and click “Search”.
+## Built With
+- **HTML5**
+- **Vanilla CSS**
+- **Vanilla JavaScript** 
 
-Usage
-- Enter a city name (e.g., London, New York, Mumbai).
-- Press Enter or click the Search button.
-- View current weather, including:
-  - City and country
-  - Temperature (°C)
-  - Description (e.g., clear sky, scattered clouds)
-  - Humidity, wind speed, pressure, visibility, feels like, and cloudiness
-
-API Information
-- Geocoding endpoint:
-  - https://api.openweathermap.org/geo/1.0/direct
-- Weather endpoint:
-  - https://api.openweathermap.org/data/2.5/weather
-- Units:
-  - Metric (Celsius) is used via units=metric.
-
-Customization
-You can customize:
-- Colors and fonts in styles.css (via CSS variables and styles).
-- Layout or cards in index.html.
-- Additional data fields in script.js (e.g., sunrise/sunset, min/max temperature).
-
-Common Issues
-- “Please add your OpenWeatherMap API key”:
-  - Make sure you replaced the API_KEY value in script.js.
-- “City not found”:
-  - Check spelling and try again.
-- No data or network error:
-  - Check your internet connection and whether the API key is active (it may take a few minutes after creation).
-
-License
-This project is for learning and personal use. Respect OpenWeatherMap’s usage terms when using their API.
-
-Credits
-- Weather data: OpenWeatherMap (https://openweathermap.org/)
-- Icons: Font Awesome (https://fontawesome.com/)
+## Developer Note
+This application initially utilized the OpenWeatherMap API, but was refactored to use Open-Meteo to remove the requirement for developer API keys, making it significantly more accessible for beginners to run and modify without setup hurdles.
